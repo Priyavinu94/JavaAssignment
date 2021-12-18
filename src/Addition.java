@@ -9,8 +9,9 @@ public class Addition {
 		System.out.println("Enter two integers");
 		System.out.println(num1);
 		System.out.println(num2);
-
-		System.out.println("Sum of the integers = " + (num1+num2));
+		
+		int sum = num1+num2;
+		System.out.println("Sum of the integers = " + sum);
 
 	}
 
