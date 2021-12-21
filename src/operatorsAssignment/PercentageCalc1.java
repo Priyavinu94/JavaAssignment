@@ -1,8 +1,8 @@
 //Assignment Question #15
-//program to calculate the percentage obtained in a subject, provided the marks scored.
+//program to calculate the percentage obtained in a subject, provided the marks scored.package operatorsAssignment;
 package operatorsAssignment;
 
-public class PercentageCalculation {
+public class PercentageCalc1 {
 
 	public static void main(String[] args) {
 		
@@ -23,6 +23,7 @@ public class PercentageCalculation {
 		System.out.println("Enter the marks in Data ware house...  "+markDWH);
 		System.out.println("Percentage in Data ware house is   "+ (markDWH/totalScore*100)+" %");
 		System.out.println();
+
 	}
 
 }
