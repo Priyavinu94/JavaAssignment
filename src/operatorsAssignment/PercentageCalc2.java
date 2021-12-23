@@ -26,7 +26,12 @@ public class PercentageCalc2 {
 		System.out.println("Enter the marks in Data ware house");
 		int markDWH = read.nextInt();
 		System.out.println("Percentage in Data ware house is   " + (markDWH / totalScore * 100) + " %");
-
+		
+		int totalMarks = (markMath + markSci + markOS + markDWH);
+		
+		System.out.println("Total Marks Scored is " + totalMarks);
+		System.out.println("Total Percentage scored is " + (totalMarks / (4*totalScore) * 100) + " %");
+		
 		read.close();
 	}
 
