@@ -1,4 +1,9 @@
-// Program to print the Grade, by reading the percentage scored.
+/* Program to print the Grade, by reading the percentage scored.
+ *  Grade A, if percentage is 75 and more
+ *  Grade B, if percentage is 60 and more, but less than 75
+ *  Grade C, if percentage is 50 and more, but less than 60
+ *  Grade D, if percentage is less than 50
+ */
 
 package ifElseAssignment;
 

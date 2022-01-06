@@ -1,4 +1,9 @@
-//Program to print the license issued based on entering the age and current level of license holding
+/* Program to print the license issued based on entering the age and current level of license holding
+ *  - No license issued if age is less than 16
+ *  - G1 is issued : when age is more than 16 and passed G1 test
+ *  - G2 is issued : when age is more than 16 and passed G2 test
+ *  - G is issued : when age is more than 16 and passed G test
+ */
 
 package ifElseAssignment;
 
