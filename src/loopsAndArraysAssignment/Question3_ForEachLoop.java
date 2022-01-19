@@ -30,8 +30,8 @@ public class Question3_ForEachLoop {
 			}
 			System.out.println("Enter a product name from the above list :	");
 			String productApple = input.nextLine();
-			for (int i = 0; i < brandApple.length; i++) {
-				if (productApple.equals(brandApple[i])) {
+			for (String apple : brandApple) {
+				if (productApple.equals(apple)) {
 					isProductAvailable = true;
 				}
 			}
@@ -46,8 +46,8 @@ public class Question3_ForEachLoop {
 			}
 			System.out.println("Enter a product name from the above list :	");
 			String productGoogle = input.nextLine();
-			for (int i = 0; i < brandGoogle.length; i++) {
-				if (productGoogle.equals(brandGoogle[i])) {
+			for (String google : brandGoogle) {
+				if (productGoogle.equals(google)) {
 					isProductAvailable = true;
 				}
 			}
@@ -62,8 +62,8 @@ public class Question3_ForEachLoop {
 			}
 			System.out.println("Enter a product name from the above list :	");
 			String productSamsung = input.next();
-			for (int i = 0; i < brandSamsung.length; i++) {
-				if (productSamsung.equals(brandSamsung[i])) {
+			for (String samsung : brandSamsung) {
+				if (productSamsung.equals(samsung)) {
 					isProductAvailable = true;
 				}
 			}
