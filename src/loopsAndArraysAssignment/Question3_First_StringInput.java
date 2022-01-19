@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class Question3_First_StringInput {
 
 	public static void main(String[] args) {
-
+		
 		Scanner input = new Scanner(System.in);
 
 		String[] brandNames = { "Apple", "Google", "Samsung" };
@@ -35,7 +35,7 @@ public class Question3_First_StringInput {
 			for (int i = 0; i < brandApple.length; i++) {
 				System.out.println("	" + (i + 1) + ". " + brandApple[i]);
 			}
-			System.out.print("Enter a product name from the above list :");
+			System.out.println("Enter a product name from the above list :	");
 			String productApple = input.nextLine();
 			for (int i = 0; i < brandApple.length; i++) {
 				if (productApple.equals(brandApple[i])) {
@@ -51,7 +51,7 @@ public class Question3_First_StringInput {
 			for (int i = 0; i < brandGoogle.length; i++) {
 				System.out.println("	" + (i + 1) + ". " + brandGoogle[i]);
 			}
-			System.out.print("Enter a product name from the above list :	");
+			System.out.println("Enter a product name from the above list :	");
 			String productGoogle = input.nextLine();
 			for (int i = 0; i < brandGoogle.length; i++) {
 				if (productGoogle.equals(brandGoogle[i])) {
@@ -67,7 +67,7 @@ public class Question3_First_StringInput {
 			for (int i = 0; i < brandSamsung.length; i++) {
 				System.out.println("	" + (i + 1) + ". " + brandSamsung[i]);
 			}
-			System.out.print("Enter a product name from the above list :	");
+			System.out.println("Enter a product name from the above list :	");
 			String productSamsung = input.next();
 			for (int i = 0; i < brandSamsung.length; i++) {
 				if (productSamsung.equals(brandSamsung[i])) {
@@ -83,7 +83,7 @@ public class Question3_First_StringInput {
 			break;
 		}
 		}
-
+		
 		input.close();
 
 	}
