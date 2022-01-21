@@ -14,12 +14,15 @@ public class Question3_ForEachLoop {
 		String[] brandGoogle = { "Google Pixel 6", "Google Pixel 6 Pro", "Google Pixel Pro", "Google Pixel 5" };
 		String[] brandSamsung = { "S20", "S21", "Flip3", "Fold3" };
 
-		System.out.println("Enter the brand name that you are looking for :	");
+		System.out.println("Available phone brands are listed below : ");
 		for (String name : brandNames) {
 			System.out.println(name);
 		}
-		String brandName = input.nextLine();
-		boolean isProductAvailable = false;
+		System.out.println("Enter the brand name that you are looking for :	");
+		String brandName = input.nextLine();	//variable to store brand name entered by user
+		String product = "";	// variable created to store the product name entered by user
+		boolean isBrandValid = true;	//boolean variable created to check condition at line 78
+		boolean isProductAvailable = false;	//variable to track the availability of a product
 
 		switch (brandName) {
 
@@ -29,14 +32,12 @@ public class Question3_ForEachLoop {
 				System.out.println(apple);
 			}
 			System.out.println("Enter a product name from the above list :	");
-			String productApple = input.nextLine();
+			product = input.nextLine();
 			for (String apple : brandApple) {
-				if (productApple.equals(apple)) {
+				if (product.equals(apple)) {
 					isProductAvailable = true;
 				}
 			}
-			System.out.println((isProductAvailable == true) ? ("Product selected is : " + productApple)
-					: "Invalid entry. Please select a product available from the list");
 			break;
 		}
 		case "Google": {
@@ -45,14 +46,12 @@ public class Question3_ForEachLoop {
 				System.out.println(google);
 			}
 			System.out.println("Enter a product name from the above list :	");
-			String productGoogle = input.nextLine();
+			product = input.nextLine();
 			for (String google : brandGoogle) {
-				if (productGoogle.equals(google)) {
+				if (product.equals(google)) {
 					isProductAvailable = true;
 				}
 			}
-			System.out.println((isProductAvailable == true) ? ("Product selected is : " + productGoogle)
-					: "Invalid entry. Please select a product available from the list");
 			break;
 		}
 		case "Samsung": {
@@ -61,20 +60,24 @@ public class Question3_ForEachLoop {
 				System.out.println(samsung);
 			}
 			System.out.println("Enter a product name from the above list :	");
-			String productSamsung = input.next();
+			product = input.next();
 			for (String samsung : brandSamsung) {
-				if (productSamsung.equals(samsung)) {
+				if (product.equals(samsung)) {
 					isProductAvailable = true;
 				}
 			}
-			System.out.println((isProductAvailable == true) ? ("Product selected is : " + productSamsung)
-					: "Invalid entry. Please select a product available from the list");
 			break;
 		}
 		default: {
 			System.out.println("Invalid entry. Please enter a valid brand name.");
+			isBrandValid = false;	//brand name is invalid
 			break;
 		}
+		}
+
+		if (isBrandValid) {		//if brand name is invalid, no need to print the availability of any product
+			System.out.println((isProductAvailable) ? ("Product selected is : " + product)
+					: "Invalid entry. Please select a product available from the list");
 		}
 
 		input.close();
